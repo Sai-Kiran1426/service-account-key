@@ -1,4 +1,4 @@
-import os
+//import os
 import smtplib
 from datetime import datetime, timezone
 from email.message import EmailMessage
@@ -28,7 +28,7 @@ def fetch_service_account_data():
         ]
 
         if not user_managed_keys:
-            report += f"🔹 {email} — No user-managed keys found\n"
+           # report += f"🔹 {email} — No user-managed keys found\n"
             continue
 
         for key in user_managed_keys:
